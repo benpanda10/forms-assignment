@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link rel="stylesheet" type="text/css" href="create-acc.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Create Account</h2>
+
+        <p>Fill in the details to get started</p>
+      </header>
+
+      <main>
+        <form>
+          <label for="fname" id="flabel">Full Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="John Doe"
+            required
+          />
+
+          <label for="email" id="elabel">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label for="password" id="plabel">Password</label>
+          <input type="password" id="password" name="password" required />
+          <p id="caption">Must be at least 8 characters long</p>
+
+          <label for="role">Role</label>
+          <select id="role" name="role">
+            <option value="">Select a Role</option>
+            <option value="d">Doctor</option>
+            <option value="f">Firefighter</option>
+            <option value="a">Astronaut</option>
+            <option value="p">Prefer not to Say</option>
+          </select>
+
+          <label for="bio">Bio</label>
+          <textarea id="bio" name="bio" placeholder="Tell Us About Yourself">
+          </textarea>
+          <p id="caption">Keep it short and sweet</p>
+
+          <input type="checkbox" id="tnc" name="check" value="accepted" />
+          <label for="tnc" class="tnc"
+            >I agree to the Terms and Conditions</label
+          >
+        </form>
+
+        <a href="#submit"><p class="button">Create Account</p></a>
+      </main>
+    </div>
+  </body>
+</html>
